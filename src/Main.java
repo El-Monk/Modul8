@@ -6,6 +6,7 @@ public class Main {
         if (file.isFile() == true) {
             long length = file.length();
             if (length == 0) {
+                boolean isDelete = file.delete();
                 System.out.println("Файл " + file.getName() + " был пустой и удален" );
             }
             else
@@ -18,6 +19,7 @@ public class Main {
         if (file1.isFile() == true) {
             long length1 = file1.length();
             if (length1 == 0) {
+                boolean isDelete = file1.delete();
                 System.out.println("Файл " + file1.getName() + " был пустой и удален" );
             }
             else
@@ -30,6 +32,7 @@ public class Main {
         if (file2.isFile() == true) {
             long length2 = file1.length();
             if (length2 == 0) {
+                boolean isDelete = file2.delete();
                 System.out.println("Файл " + file2.getName() + " был пустой и удален" );
             }
             else
